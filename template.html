@@ -1,0 +1,122 @@
+<div class="card">
+    <div class="background">
+        <div class="name"><span>Zidane</span></div>
+        <div class="statistics">
+            <div class="column">
+                <span>
+                    <div class="value">88</div>
+                    <div class="title">PAC</div>
+                </span>
+                <span>
+                    <div class="value">91</div>
+                    <div class="title">SHO</div>
+                </span>
+                <span>
+                    <div class="value">89</div>
+                    <div class="title">PAS</div>
+                </span>
+            </div>
+            <div class="column">
+                <span>
+                    <div class="value">94</div>
+                    <div class="title">DRI</div>
+                </span>
+                <span>
+                    <div class="value">75</div>
+                    <div class="title">DEF</div>
+                </span>
+                <span>
+                    <div class="value">83</div>
+                    <div class="title">PHY</div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .card .background {
+        position: relative;
+        background-image: url('src/assets/background.png');
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        min-width: 200px;
+        aspect-ratio: 1 / 1.5;
+        z-index: 2;
+        transition: 200ms ease-in;
+        margin: 0 auto;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card .name {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        text-transform: uppercase;
+        border-bottom: 2px solid rgba(233, 204, 116, 0.1);
+        padding-bottom: 0.3rem;
+        overflow: hidden;
+        display: block;
+        font-weight: bold;
+        color: #816510;
+    }
+
+    .card .statistics {
+        margin: 0.5rem auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card .statistics .column {
+        border-right: 2px solid rgba(233, 204, 116, 0.1);
+        padding: 0 8px;
+    }
+
+    .card .statistics .column span {
+        display: flex;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 32px;
+    }
+
+    .card .statistics .column .value {
+        margin-right: 0.3rem;
+        font-weight: 700;
+    }
+
+    .card .statistics .column .title {
+        font-weight: 300;
+    }
+
+    .card .statistics .column:last-child {
+        border: 0;
+    }
+
+</style>
